@@ -1,0 +1,43 @@
+{
+    "name": "rtn-ios-vibration",
+    "version": "0.0.2",
+    "description": "Custom vibration for ios with Turbo Native Modules",
+    "react-native": "js/index",
+    "source": "js/index",
+    "files": [
+        "js",
+        "android",
+        "ios",
+        "rtn-ios-vibration.podspec",
+        "!android/build",
+        "!ios/build",
+        "!**/__tests__",
+        "!**/__fixtures__",
+        "!**/__mocks__"
+    ],
+    "keywords": [
+        "react-native",
+        "ios",
+        "android"
+    ],
+    "repository": "https://github.com/tsrugh/rtn-ios-vibration",
+    "author": "Tsrugh lucaspdsts@gmail.com (https://github.com/tsrugh)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/tsrugh/rtn-ios-vibration/issues"
+    },
+    "homepage": "https://github.com/tsrugh/rtn-ios-vibration#readme",
+    "devDependencies": {},
+    "peerDependencies": {
+        "react": "*",
+        "react-native": "*"
+    },
+    "codegenConfig": {
+        "name": "RTNIosVibrationSpec",
+        "type": "modules",
+        "jsSrcsDir": "js",
+        "android": {
+            "javaPackageName": "com.rtniosvibration"
+        }
+    }
+}
