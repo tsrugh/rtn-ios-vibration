@@ -1,5 +1,5 @@
 import { NativeModules, Platform } from 'react-native';
-import { Spec } from './NativeIosVibration';
+import { Spec } from './js/NativeIosVibration';
 
 const LINKING_ERROR =
     `The package 'react-native-awesome-module' doesn't seem to be linked. Make sure: \n\n` +
@@ -9,7 +9,7 @@ const LINKING_ERROR =
 
 const isTurboModuleEnabled = global.__turboModuleProxy != null;
 
-const RTNIosVibrationModule = isTurboModuleEnabled ? require('./NativeIosVibration').default : NativeModules.RTNIosVibration;
+const RTNIosVibrationModule = isTurboModuleEnabled ? require('./js/NativeIosVibration').default : NativeModules.RTNIosVibration;
 
 
 const RTNIosVibration: Spec = RTNIosVibrationModule ? RTNIosVibrationModule : new Proxy(
