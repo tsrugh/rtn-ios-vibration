@@ -1,10 +1,10 @@
 {
     "name": "rtn-ios-vibration",
-    "version": "0.0.4",
+    "version": "0.0.6",
     "description": "Custom vibration for ios with Turbo Native Modules",
-    "react-native": "index",
-    "source": "index",
-    "main": "index",
+    "react-native": "./js/index",
+    "source": "./js/index.tsx",
+    "main": "./js/index.tsx",
     "files": [
         "js",
         "android",
